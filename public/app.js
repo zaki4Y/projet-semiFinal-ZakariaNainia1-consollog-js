@@ -1,0 +1,29 @@
+let userPrompts=prompt("chose between sing up or loggin in or changing password")
+if (userPrompts=="sing up") {
+    let urname=prompt("what is u r name")
+    urname=urname.trim()
+    console.log(urname);
+    let firstletter = urname.charAt(0).toUpperCase() + urname.slice(1)
+    console.log(firstletter);
+while (firstletter.length<5) {
+    firstletter=prompt("what is u r name")
+    
+}  
+}if (userPrompts=="loggin") {
+    let userEmail = prompt("insert your email ?");
+let p1 = userEmail.indexOf("@");
+let P = userEmail.lastIndexOf(".");
+while (userEmail.length <= 10) {
+    userEmail = prompt("the  Email should containe   10 characters ! insert  a valide Email")
+    
+}
+
+if (p1< 1 || P<p1+2 || P+2>=userEmail.length) {
+    alert("adress email incorect");
+}console.log(userEmail);
+}
+
+
+
+
+

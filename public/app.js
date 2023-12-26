@@ -8,9 +8,7 @@ if (userPrompts=="sing up") {
 while (firstletter.length<5) {
     firstletter=prompt("what is u r name")
     
-}  
-}if (userPrompts=="loggin") {
-    let userEmail = prompt("insert your email ?");
+}      let userEmail = prompt("insert your email ?");
 let p1 = userEmail.indexOf("@");
 let P = userEmail.lastIndexOf(".");
 while (userEmail.length <= 10) {
@@ -22,6 +20,8 @@ if (p1< 1 || P<p1+2 || P+2>=userEmail.length) {
     alert("adress email incorect");
 }console.log(userEmail);
 }
+
+
 
 
 

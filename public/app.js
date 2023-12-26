@@ -17,9 +17,28 @@ while (userEmail.length <= 10) {
 }
 
 if (p1< 1 || P<p1+2 || P+2>=userEmail.length) {
-    alert("adress email incorect");
+    alert("adress email correct");
 }console.log(userEmail);
+
+let age=prompt("enter your age")
+
+
+age = age.trim().includes(NaN)
+while (age == "0") {
+    age = prompt("enter your age again")
+    
 }
+
+while (age.includes(" ") || age.length >= 3 ) {
+    age = prompt("enter your age again")
+}
+
+console.log(age);
+}
+
+
+
+
 
 
 

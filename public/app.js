@@ -1,3 +1,14 @@
+class User{
+    constructor(fulname,age,password,money){
+        this.fulname=fulname
+        this.age=age
+        this.password=password
+        this.money=money
+
+    }
+}
+
+
 let userPrompts=prompt("chose between sing up or loggin in or changing password")
 if (userPrompts=="sing up") {
     let urname=prompt("what is u r name")
@@ -49,9 +60,6 @@ while (password.indexOf(' ') !== -1) {
 
 while (password.length < 7) {
     password=prompt("Password must be at least 7 characters long.");
-
-
-
 
 }
 

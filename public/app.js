@@ -16,13 +16,12 @@ while (userEmail.length <= 10) {
     
 }
 
+
 if (p1< 1 || P<p1+2 || P+2>=userEmail.length) {
     alert("adress email correct");
 }console.log(userEmail);
 
 let age=prompt("enter your age")
-
-
 age = age.trim().includes(NaN)
 while (age == "0") {
     age = prompt("enter your age again")
@@ -34,15 +33,28 @@ while (age.includes(" ") || age.length >= 3 ) {
 }
 
 console.log(age);
+
+
+let password=prompt("insert your password")
+password=password.trim()
+while (password.trim() !== password) {
+    password=prompt("Password cannot have leading or trailing spaces.");
+    
+}
+while (password.indexOf(' ') !== -1) {
+    password=prompt("Password cannot have spaces in the middle.");
+    
 }
 
 
+while (password.length < 7) {
+    password=prompt("Password must be at least 7 characters long.");
 
 
 
 
+}
 
 
-
-
+}
 
